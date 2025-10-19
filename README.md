@@ -1,7 +1,7 @@
 # Diabetes Progression Prediction Service
 
-[![CI Status](https://github.com/SuviDeSilva94/MAIO-Assignment3/actions/workflows/ci.yml/badge.svg)](https://github.com/SuviDeSilva94/MAIO-Assignment3/actions/workflows/ci.yml)
-[![Release Status](https://github.com/SuviDeSilva94/MAIO-Assignment3/actions/workflows/release.yml/badge.svg)](https://github.com/SuviDeSilva94/MAIO-Assignment3/actions/workflows/release.yml)
+[![CI Status](https://github.com/dilmiwickramarathna/mlops-diabetes-triage/actions/workflows/ci.yml/badge.svg)](https://github.com/dilmiwickramarathna/mlops-diabetes-triage/actions/workflows/ci.yml)
+[![Release Status](https://github.com/dilmiwickramarathna/mlops-diabetes-triage/actions/workflows/release.yml/badge.svg)](https://github.com/dilmiwickramarathna/mlops-diabetes-triage/actions/workflows/release.yml)
 
 An ML service that predicts short-term diabetes progression to help hospital virtual clinics prioritize patient follow-ups.
 
@@ -25,15 +25,15 @@ This service provides a REST API for predicting diabetes progression risk based 
 Pull and run the latest release:
 
 ```bash
-# Pull the image (v0.1.0 - Baseline)
-docker pull ghcr.io/suvidesilva94/maio-assignment3:v0.1.0
+# Pull the image (v0.1 - Baseline)
+docker pull ghcr.io/dilmiwickramarathna/mlops-diabetes-triage:v0.1
 
 # Run the container
-docker run -d -p 8000:8000 --name diabetes-api ghcr.io/suvidesilva94/maio-assignment3:v0.1.0
+docker run -d -p 8000:8000 --name diabetes-api ghcr.io/dilmiwickramarathna/mlops-diabetes-triage:v0.1
 
-# Or pull v0.2.0 (Improved with Ridge Regression)
-docker pull ghcr.io/suvidesilva94/maio-assignment3:v0.2.0
-docker run -d -p 8000:8000 --name diabetes-api ghcr.io/suvidesilva94/maio-assignment3:v0.2.0
+# Or pull v0.2 (Improved with Ridge Regression)
+docker pull ghcr.io/dilmiwickramarathna/mlops-diabetes-triage:v0.2
+docker run -d -p 8000:8000 --name diabetes-api ghcr.io/dilmiwickramarathna/mlops-diabetes-triage:v0.2
 ```
 
 The API will be available at `http://localhost:8000`.
@@ -43,8 +43,8 @@ The API will be available at `http://localhost:8000`.
 1. **Clone the repository:**
 
 ```bash
-git clone https://github.com/SuviDeSilva94/MAIO-Assignment3.git
-cd MAIO-Assignment3
+git clone https://github.com/dilmiwickramarathna/mlops-diabetes-triage.git
+cd mlops-diabetes-triage
 ```
 
 2. **Create virtual environment:**
@@ -344,13 +344,13 @@ git push origin main --tags
 The release workflow will automatically:
 - Build the Docker image
 - Run smoke tests
-- Publish to `ghcr.io/suvidesilva94/maio-assignment3:v0.1.0`
+- Publish to `ghcr.io/dilmiwickramarathna/mlops-diabetes-triage:v0.1`
 - Create a GitHub Release with metrics
 
 ## Project Structure
 
 ```
-MAIO-Assignment3/
+mlops-diabetes-triage/
 ├── .github/
 │   └── workflows/
 │       ├── ci.yml           # CI pipeline
@@ -412,8 +412,8 @@ This project is part of an academic assignment for MAIO (ML/AI in Operations).
 
 ## Contact
 
-**Author**: Suvi De Silva (@SuviDeSilva94)  
-**Repository**: https://github.com/SuviDeSilva94/MAIO-Assignment3
+**Author**: Dilmi Wickramarathna (@dilmiwickramarathna)  
+**Repository**: https://github.com/dilmiwickramarathna/mlops-diabetes-triage
 
 For questions or issues, please open a GitHub issue.
 
