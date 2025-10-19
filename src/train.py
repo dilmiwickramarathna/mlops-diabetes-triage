@@ -20,6 +20,7 @@ from sklearn.preprocessing import StandardScaler
 # Set random seed for reproducibility
 RANDOM_SEED = 42
 np.random.seed(RANDOM_SEED)
+MODEL_VERSION = "0.1.0"
 
 
 def load_data():
@@ -66,7 +67,7 @@ def train_model(X, y, output_dir="models"):
     test_mae = mean_absolute_error(y_test, y_test_pred)
 
     metrics = {
-        "model_version": "0.1.0",
+        "model_version": MODEL_VERSION,
         "model_type": "LinearRegression",
         "scaler_type": "StandardScaler",
         "random_seed": RANDOM_SEED,
