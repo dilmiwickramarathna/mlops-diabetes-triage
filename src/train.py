@@ -66,6 +66,7 @@ def train_model(X, y, output_dir="models"):
     test_mae = mean_absolute_error(y_test, y_test_pred)
 
     metrics = {
+        "model_version": "0.1.0",
         "model_type": "LinearRegression",
         "scaler_type": "StandardScaler",
         "random_seed": RANDOM_SEED,
